@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gym Template">
+    <meta name="keywords" content="Gym, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gym | Template</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/barfiller.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Estilo dos botões de idioma -->
+    <style>
+        .language-switch {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-right: 15px;
+        }
+
+        .language-switch button {
+            border: 1px solid rgba(255,255,255,.45);
+            background: transparent;
+            color: #fff;
+            padding: 7px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .language-switch button:hover {
+            background: #00e3d2;
+            border-color: #00e3d2;
+        }
+
+        #google_translate_element {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+        }
+
+        .goog-tooltip,
+        .goog-tooltip:hover {
+            display: none !important;
+        }
+
+        .goog-text-highlight {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+
+        @media (max-width: 991px) {
+            .language-switch {
+                justify-content: center;
+                margin: 12px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="offcanvas-menu-overlay"></div>
+
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+
+        <div class="canvas-search search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About Us</a></li>
+                <li><a href="./classes.html">Classes</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="mobile-menu-wrap"></div>
+
+        <div class="canvas-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="img/logo.png" alt="EsporteAção">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <nav class="nav-menu"><ul><li class="active"><a href="./index.html">Home</a></li><li><a href="./about-us.html">About Us</a></li><li><a href="./services.html">Services</a></li><li><a href="./contact.html">Contact</a></li></ul></nav>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="top-option">
+
+                        <!-- BOTÕES DE TRADUÇÃO -->
+                        <div class="language-switch" aria-label="Selecionar idioma">
+  <button type="button" class="is-active" onclick="translateWholeSite('pt', this)" aria-label="Traduzir para português">🇧🇷 PT</button>
+  <button type="button" onclick="translateWholeSite('en', this)" aria-label="Translate to English">🇺🇸 EN</button>
+</div>
+
+                        <div class="to-search search-switch">
+                            <i class="fa fa-search"></i>
+                        </div>
+
+                        <div class="to-social">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero-section">
+        <div class="hs-slider owl-carousel">
+
+            <div class="hs-item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="hi-text">
+                                <span>TRAIN WITH FOCUS</span>
+                                <h1>BE <strong>STRONG</strong> ACHIEVE YOUR GOALS</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-6">
+                            <div class="hi-text">
+                                <span>Shape your body</span>
+                                <h1>Be <strong>strong</strong> training hard</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="choseus-section spad">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>TAKE CARE OF YOUR HEALTH</span>
+                        <h2>More vitality, energy, and quality of life for you.</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-034-stationary-bike"></span>
+                        <h4>Personalized workouts</h4>
+                        <p>Exercises tailored to your goals and your level.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-033-juice"></span>
+                        <h4>Professional guidance</h4>
+                        <p>Get guidance to improve your diet, maintain a healthy routine, and reach your goals.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-002-dumbell"></span>
+                        <h4>Personalized workouts</h4>
+                        <p>Workouts tailored to your goals.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <div class="cs-item">
+                        <span class="flaticon-014-heart-beat"></span>
+                        <h4>Health and well-being</h4>
+                        <p>Take care of your body and your health with activities that promote greater energy and a better quality of life.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Banner de transformação -->
+    <section class="banner-section set-bg" data-setbg="img/banner-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="bs-text">
+                        <h2>BEGIN YOUR TRANSFORMATION</h2>
+                        <div class="bt-tips">
+                            Train, evolve, and reach your goals with EsporteAção.
+                        </div>
+                        <a href="#" class="primary-btn btn-normal">COME TRAIN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos -->
+    <section class="pricing-section spad">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Plan</span>
+                        <h2>Choose your pricing plan</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>GYM DAY PASS</h3>
+
+                        <div class="pi-price">
+                            <h2>R$ 25,00</h2>
+                            <span>1-DAY ACCESS</span>
+                        </div>
+
+                        <ul>
+                            <li>Gym access</li>
+                            <li>Use of equipment</li>
+                            <li>Free practice</li>
+                            <li>Without loyalty</li>
+                            <li>Access to training areas</li>
+                            <li>Gym operating hours</li>
+                        </ul>
+
+                        <a href="#" class="primary-btn pricing-btn">GET IT NOW</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>MONTHLY PLAN</h3>
+
+                        <div class="pi-price">
+                            <h2>R$ 100,00</h2>
+                            <span>MONTHLY</span>
+                        </div>
+
+                        <ul>
+                            <li>Gym access</li>
+                            <li>Use of equipment</li>
+                            <li>Free practice</li>
+                            <li>Gym operating hours: 05:00–12:00, 15:00–22:00</li>
+                            <li>Without loyalty</li>
+                        </ul>
+
+                        <a href="#" class="primary-btn pricing-btn">INSCREVA-SE</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-8">
+                    <div class="ps-item">
+                        <h3>PERSONAL TRAINER</h3>
+
+                        <div class="pi-price">
+                            <h2>R$ 50,00</h2>
+                            <span>1 HOUR OF TRAINING</span>
+                        </div>
+
+                        <ul>
+                            <li>Individual training</li>
+                            <li>Professional guidance</li>
+                            <li>Orientação durante os exercícios</li>
+                            <li>Personalized training</li>
+                            <li>Defining objectives</li>
+                            <li>Performance monitoring</li>
+                        </ul>
+
+                        <a href="#" class="primary-btn pricing-btn">AGENDAR</a>
+                        <a href="#" class="thumb-icon"><i class="fa fa-picture-o"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria -->
+    <div class="gallery-section">
+        <div class="gallery">
+
+            <div class="grid-sizer"></div>
+
+            <div class="gs-item grid-wide set-bg" data-setbg="img/gallery/gallery-1.jpg">
+                <a href="img/gallery/gallery-1.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+            <div class="gs-item set-bg" data-setbg="img/gallery/gallery-2.jpg">
+                <a href="img/gallery/gallery-2.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+            <div class="gs-item set-bg" data-setbg="img/gallery/gallery-3.jpg">
+                <a href="img/gallery/gallery-3.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+            <div class="gs-item set-bg" data-setbg="img/gallery/gallery-4.jpg">
+                <a href="img/gallery/gallery-4.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+            <div class="gs-item set-bg" data-setbg="img/gallery/gallery-5.jpg">
+                <a href="img/gallery/gallery-5.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+            <div class="gs-item grid-wide set-bg" data-setbg="img/gallery/gallery-6.jpg">
+                <a href="img/gallery/gallery-6.jpg" class="thumb-icon image-popup">
+                    <i class="fa fa-picture-o"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="gettouch-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-map-marker"></i>
+                        <p>R. São Vito, 1591 - Campo Limpo, Americana - SP, 13477-350</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gt-text">
+                        <i class="fa fa-mobile"></i>
+                        <ul>
+                            <li>(19) 3621-6360</li>
+                            <li>(19) 98599-5519</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="gt-text email">
+                        <i class="fa fa-envelope"></i>
+                        <p>guttomuniz@gmail.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="fs-about">
+                        <div class="fa-logo"><a href="./index.html"><img src="img/logo.png" alt="EsporteAção"></a></div>
+
+                        <p>
+                            At EsporteAção, we help you take care of your health,
+                            improve your fitness, and reach your goals through
+                            physical activity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>USEFUL LINKS</h4>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Classes</a></li>
+                            <li><a href="#">Training Sessions</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="fs-widget">
+                        <h4>CONTACT US</h4>
+                        <ul>
+                            <li><a href="#">Get in touch</a></li>
+                            <li><a href="#">Get your questions answered</a></li>
+                            <li><a href="#">Schedule a lesson</a></li>
+                            <li><a href="#">Location</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="fs-widget">
+                        <h4>TIPS AND GUIDES</h4>
+
+                        <div class="fw-recent">
+                            <h6>
+                                <a href="#">
+                                    Here you can add content related to the gym:
+                                    The importance of physical activity for health.
+                                    Information and tips for maintaining a more
+                                    active and healthy routine.
+                                    How to start a workout routine.
+                                    Check out some tips for starting to train
+                                    in a gradual and consistent way.
+                                </a>
+                            </h6>
+                        </div>
+
+                        <div class="fw-recent">
+                            <h6>
+                                <a href="#">
+                                    Fitness: The best exercise to lose belly fat
+                                    and tone up...
+                                </a>
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p>
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script>
+                            All rights reserved | This template is made with
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            by
+                            <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pesquisa -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript do template -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Tradutor: tradução da página inteira -->
+    <div id="google_translate_element" aria-hidden="true"></div>
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'pt',
+                includedLanguages: 'pt,en',
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+
+        function translateWholeSite(language) {
+            var attempts = 0;
+
+            function selectLanguage() {
+                var selector = document.querySelector(
+                    '#google_translate_element select.goog-te-combo'
+                );
+
+                if (selector) {
+                    selector.value = language;
+                    selector.dispatchEvent(new Event('change'));
+                    return;
+                }
+
+                attempts++;
+
+                if (attempts < 20) {
+                    setTimeout(selectLanguage, 300);
+                } else {
+                    alert(
+                        'O tradutor não carregou. Verifique sua conexão com a internet e tente novamente.'
+                    );
+                }
+            }
+
+            selectLanguage();
+        }
+    </script>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+</html>
